@@ -1,0 +1,10 @@
+Verantwoording Code
+
+Bij mijn concept staat het afspelen van geluiden centraal. Ook moet de gebruiker kunnen scrollen door de geluiden.
+Ik heb ervoor gekozen om OpenFrameworks hiervoor te gebruiken, aangezien het via Arduino zelf heel erg lastig is om
+geluiden af te laten spelen. Daarnaast moet de gebruiker door middel van de druksensor door 8 geluiden heen kunnen scrollen.
+Daar moet zo min mogelijk vertraging tussen zitten.
+
+De 8 geluiden zelf zijn 30 seconden lang, en elke keer wanneer er op de knop wordt gedrukt, worden alle 8 geluiden tegelijkertijd
+afgespeeld. Maar bij alle geluiden staat het volume op 0, op één na. De waarde van de druksensor wordt gemapped van 0-1023 naar 1-8,
+een voor elk geluid. Bij elke verandering die de druksensor meet, wordt een hoger of lager geluidje afgespeeld.
